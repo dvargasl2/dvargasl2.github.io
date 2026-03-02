@@ -111,3 +111,32 @@ window.addEventListener('scroll', () => {
     a.style.color = a.getAttribute('href') === `#${current}` ? 'var(--accent)' : '';
   });
 }, { passive: true });
+
+/* ========== THEME TOGGLE ========== */
+const themeToggle = document.getElementById('theme-toggle');
+const html        = document.documentElement;
+
+function applyTheme(theme) {
+  if (theme === 'light') {
+    html.setAttribute('data-theme', 'light');
+  } else {
+    html.removeAttribute('data-theme');
+  }
+  localStorage.setItem('theme', theme);
+}
+
+// Sync button state with whatever the anti-flash script applied
+// (already in data-theme attribute, nothing extra needed at load)
+
+themeToggle.addEventListener('click', () => {
+  const isDark = html.getAttribute('data-theme') !== 'light';
+  applyTheme(isDark ? 'light' : 'dark');
+});
+
+// Follow OS preference changes only if user hasn't set a manual preference
+const osTheme = window.matchMedia('(prefers-color-scheme: light)');
+osTheme.addEventListener('change', (e) => {
+  if (!localStorage.getItem('theme')) {
+    applyTheme(e.matches ? 'light' : 'dark');
+  }
+});
