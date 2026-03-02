@@ -23,11 +23,11 @@ navLinks.querySelectorAll('a').forEach(link => {
 
 /* ========== TYPED TEXT ========== */
 const phrases = [
+  'Data Analytics & ML Enthusiast',
   'CS + IE Student @ Uniandes',
-  'Python & Java Developer',
-  'Trilingual Communicator',
-  'Teaching Assistant',
-  'Problem Solver'
+  'Python Developer',
+  'AI & Data-Driven Thinker',
+  'Trilingual · ES / EN / FR'
 ];
 let phraseIndex = 0;
 let charIndex   = 0;
