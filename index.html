@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Vargas López</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">DV<span class="accent">.</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#focus">Focus</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#beyond">Life</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Daniel Vargas<br /><span class="accent">López</span></h1>
+      <p class="hero-title">
+        <span class="typed-wrapper">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </span>
+      </p>
+      <p class="hero-desc">
+        Systems & Computer Engineering + Industrial Engineering student at
+        <span class="accent">Universidad de los Andes</span>. Passionate about
+        building things that matter, fluent in three languages, and always
+        learning.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/dvargasl2/" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-vargas-l%C3%B3pez-956683388/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:dvargasl@icloud.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-line"></div>
+      <h2 class="section-title">About <em>Me</em></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a disciplined, analytical, and committed person currently
+            pursuing a double degree in <strong>Systems & Computer Engineering</strong>
+            and <strong>Industrial Engineering</strong> at Universidad de los Andes,
+            Bogotá (2023–2028).
+          </p>
+          <p>
+            My journey has taken me from Bogotá to Belgium, where I completed
+            a cultural exchange with AFS and took undergraduate CS courses at
+            the <strong>Université Libre de Bruxelles</strong>. This experience
+            shaped my adaptability, multilingual communication, and global
+            perspective.
+          </p>
+          <p>
+            I thrive in interdisciplinary teams, love tackling complex problems,
+            and enjoy bridging the gap between engineering and business thinking.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number accent">3</span>
+              <span class="stat-label">Languages</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number accent">2</span>
+              <span class="stat-label">Degrees</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number accent">3+</span>
+              <span class="stat-label">Countries</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number accent">2028</span>
+              <span class="stat-label">Graduation</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-languages">
+          <h3>Languages</h3>
+          <div class="lang-item">
+            <div class="lang-info"><span>Spanish</span><span class="lang-level">Native</span></div>
+            <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+          </div>
+          <div class="lang-item">
+            <div class="lang-info"><span>English</span><span class="lang-level">C1 – Advanced</span></div>
+            <div class="lang-bar"><div class="lang-fill" style="width:88%"></div></div>
+          </div>
+          <div class="lang-item">
+            <div class="lang-info"><span>French</span><span class="lang-level">B2 – Intermediate</span></div>
+            <div class="lang-bar"><div class="lang-fill" style="width:65%"></div></div>
+          </div>
+          <div class="about-links">
+            <a href="https://www.linkedin.com/in/daniel-vargas-l%C3%B3pez-956683388/" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/dvargasl2/" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOCUS / INTERESTS -->
+  <section id="focus">
+    <div class="container">
+      <div class="section-line"></div>
+      <h2 class="section-title">Current <em>Focus</em></h2>
+      <p class="section-sub">Areas I'm actively studying, building in, and most passionate about right now.</p>
+      <div class="focus-grid">
+
+        <div class="focus-card">
+          <span class="focus-index">01</span>
+          <h3>Data Analytics</h3>
+          <p>Turning raw data into actionable insights. Working with Python, SQL, and Power BI to explore datasets and build visual dashboards that support real decisions.</p>
+          <div class="focus-tags">
+            <span class="tag tag-primary">Python</span>
+            <span class="tag tag-primary">SQL</span>
+            <span class="tag tag-primary">Power BI</span>
+            <span class="tag tag-primary">pandas</span>
+          </div>
+        </div>
+
+        <div class="focus-card">
+          <span class="focus-index">02</span>
+          <h3>Machine Learning</h3>
+          <p>Self-studying through books, university electives, and hands-on projects. Focused on supervised learning, model evaluation, and applying ML to real-world optimization problems.</p>
+          <div class="focus-tags">
+            <span class="tag tag-primary">scikit-learn</span>
+            <span class="tag tag-primary">Python</span>
+            <span class="tag tag-primary">Statistics</span>
+          </div>
+        </div>
+
+        <div class="focus-card">
+          <span class="focus-index">03</span>
+          <h3>Operations Research</h3>
+          <p>Applying mathematical optimization to solve complex scheduling and logistics challenges. Used OR techniques to optimize a 120-presentation academic congress for Uniandes.</p>
+          <div class="focus-tags">
+            <span class="tag tag-primary">Optimization</span>
+            <span class="tag tag-primary">Scheduling</span>
+            <span class="tag tag-primary">Modeling</span>
+          </div>
+        </div>
+
+        <div class="focus-card">
+          <span class="focus-index">04</span>
+          <h3>Product Development</h3>
+          <p>Building end-to-end applications that combine engineering and business thinking. Currently developing a personal finance & education web app with React and TypeScript.</p>
+          <div class="focus-tags">
+            <span class="tag tag-primary">React</span>
+            <span class="tag tag-primary">TypeScript</span>
+            <span class="tag tag-primary">Tailwind</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-line"></div>
+      <h2 class="section-title">Technical <em>Skills</em></h2>
+      <div class="skills-editorial">
+
+        <div class="skill-col">
+          <h3>Languages</h3>
+          <div class="skill-list">
+            <span>Python</span>
+            <span>Java</span>
+            <span>C++</span>
+            <span>TypeScript</span>
+            <span>SQL</span>
+            <span>R</span>
+            <span>HTML</span>
+          </div>
+        </div>
+
+        <div class="skill-col">
+          <h3>Data & Analytics</h3>
+          <div class="skill-list">
+            <span>pandas</span>
+            <span>scikit-learn</span>
+            <span>Power BI</span>
+            <span>Excel</span>
+            <span>Data Visualization</span>
+            <span>LLM Integration</span>
+            <span>API Development</span>
+          </div>
+        </div>
+
+        <div class="skill-col">
+          <h3>Tools & Frameworks</h3>
+          <div class="skill-list">
+            <span>Git</span>
+            <span>React</span>
+            <span>Tailwind CSS</span>
+            <span>Simio</span>
+            <span>VS Code</span>
+            <span>Office 365</span>
+          </div>
+        </div>
+
+        <div class="skill-col">
+          <h3>Soft Skills</h3>
+          <div class="skill-list">
+            <span>Critical Thinking</span>
+            <span>Problem Solving</span>
+            <span>Teamwork</span>
+            <span>Communication</span>
+            <span>Adaptability</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-line"></div>
+      <h2 class="section-title"><em>Edu</em>cation</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2023 – 2028</div>
+            <h3>Universidad de los Andes</h3>
+            <p class="timeline-place">Bogotá, Colombia</p>
+            <p class="timeline-desc">
+              <strong>B.Sc. Systems & Computer Engineering</strong><br/>
+              <strong>B.Sc. Industrial Engineering</strong><br/>
+              Double-degree program — expected graduation 2028.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2022</div>
+            <h3>Université Libre de Bruxelles</h3>
+            <p class="timeline-place">Brussels, Belgium</p>
+            <p class="timeline-desc">
+              Undergraduate courses in Computer Science Engineering.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2021 – 2022</div>
+            <h3>Collège Saint-Remacle</h3>
+            <p class="timeline-place">Stavelot, Belgium · AFS Exchange</p>
+            <p class="timeline-desc">
+              High school year abroad through AFS International Exchange Program.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2008 – 2021</div>
+            <h3>Colegio San Carlos</h3>
+            <p class="timeline-place">Bogotá, Colombia</p>
+            <p class="timeline-desc">
+              Primary and Secondary Education — Bachiller Académico.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-line"></div>
+      <h2 class="section-title"><em>Experi</em>ence</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot accent-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2024</div>
+            <h3>Teaching Assistant</h3>
+            <p class="timeline-place">Universidad de los Andes · Bogotá, Colombia</p>
+            <p class="timeline-desc">
+              TA for the <em>Introduction to Programming</em> course for two semesters. Supported students in understanding foundational programming concepts and debugging code.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot accent-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">Summer 2025</div>
+            <h3>Cashier, Line Cook & Bartender</h3>
+            <p class="timeline-place">Taqueria al Pastor · Brooklyn, NY, USA</p>
+            <p class="timeline-desc">
+              High-flow restaurant environment serving diverse clientele in English and Spanish. Managed simultaneous roles under pressure.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot accent-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2023 · 2024 · 2025</div>
+            <h3>Cashier, POS & Bartender</h3>
+            <p class="timeline-place">Páramo · Festival Estéreo Picnic · Bogotá, Colombia</p>
+            <p class="timeline-desc">
+              Worked three consecutive editions of one of Latin America's largest music festivals. Handled high customer volumes, POS systems, and multi-role responsibilities.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot accent-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">September 2022</div>
+            <h3>Barista</h3>
+            <p class="timeline-place">ULB Café · Brussels, Belgium</p>
+            <p class="timeline-desc">
+              Part-time barista at the Université Libre de Bruxelles café. Served a multilingual student community in French, English, and Spanish.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-line"></div>
+      <h2 class="section-title">Pro<em>jects</em></h2>
+      <p class="section-sub">Selected projects — academic, research, and personal work.</p>
+      <div class="projects-grid">
+
+        <!-- Gasafe – Award Winner -->
+        <div class="project-card project-card-featured">
+          <div class="project-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span class="project-award">1st Place · Expoandes 2023</span>
+          </div>
+          <h3>Gasafe</h3>
+          <p>Won first place in the Systems & Computer Engineering department at Expoandes — Universidad de los Andes' engineering innovation fair. Presented an original solution evaluated by faculty and peers across all engineering disciplines.</p>
+          <div class="project-tags">
+            <span class="tag tag-lang">Uniandes</span>
+            <span class="tag tag-lang">Innovation</span>
+            <span class="tag tag-lang">May 2023</span>
+          </div>
+        </div>
+
+        <!-- Congress Scheduling Optimization -->
+        <div class="project-card">
+          <div class="project-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+            <div class="project-links"></div>
+          </div>
+          <h3>Congress Scheduling Optimization</h3>
+          <p>Invited by Uniandes & FACISO to optimize the full schedule for the III Latin American Congress of Social Sciences and Government 2025 — 12 thematic axes, 120+ presentations, 39 panels across 3 days.</p>
+          <div class="project-tags">
+            <span class="tag tag-lang">Operations Research</span>
+            <span class="tag tag-lang">Python</span>
+            <span class="tag tag-lang">Sep 2025</span>
+          </div>
+        </div>
+
+        <!-- Finanzas App -->
+        <div class="project-card project-card-wip">
+          <div class="project-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <span class="project-wip-badge">In Progress</span>
+          </div>
+          <h3>Finanzas App</h3>
+          <p>Personal finance & financial education web application. Features a dashboard, portfolio tracker, investment tools, and a learning module. Built for the Product Design & IT Innovation course at Uniandes.</p>
+          <div class="project-tags">
+            <span class="tag tag-lang">React</span>
+            <span class="tag tag-lang">TypeScript</span>
+            <span class="tag tag-lang">Tailwind</span>
+            <span class="tag tag-lang">Recharts</span>
+          </div>
+        </div>
+
+        <!-- GitHub CTA -->
+        <div class="project-card project-card-cta">
+          <div class="project-cta-inner">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            <h3>More on GitHub</h3>
+            <p>Coursework, experiments, and side projects</p>
+            <a href="https://github.com/dvargasl2/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BEYOND THE CODE -->
+  <section id="beyond">
+    <div class="container">
+      <div class="section-line"></div>
+      <h2 class="section-title">Beyond the <em>Code</em></h2>
+      <p class="section-sub">The things that keep me curious outside of engineering.</p>
+      <div class="beyond-grid">
+
+        <div class="beyond-card">
+          <h3>Hi-Fi Audio</h3>
+          <p>Deep into high-fidelity sound — amplifiers, DACs, turntables, and speaker systems. I love the engineering behind great audio just as much as the music itself.</p>
+        </div>
+
+        <div class="beyond-card">
+          <h3>Vinyl Records</h3>
+          <p>There's something irreplaceable about analog sound. Collecting and listening to vinyl is one of my favourite ways to slow down and actually enjoy music.</p>
+        </div>
+
+        <div class="beyond-card">
+          <h3>Specialty Coffee</h3>
+          <p>From pour-overs to espresso, I'm as passionate about coffee craft as I am about code. Barista experience included — I've served hundreds of cups in two languages.</p>
+        </div>
+
+        <div class="beyond-card">
+          <h3>Sports</h3>
+          <p>Sports have always been part of how I recharge, stay focused, and build discipline. Whether competing or watching, I'm always in the game.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-line"></div>
+      <h2 class="section-title">Get in <em>Touch</em></h2>
+      <p class="section-sub contact-sub">
+        I'm always open to new opportunities, collaborations, or just a chat.
+        Feel free to reach out!
+      </p>
+      <div class="contact-grid">
+        <a href="mailto:dvargasl@icloud.com" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">dvargasl@icloud.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-vargas-l%C3%B3pez-956683388/" target="_blank" rel="noopener" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">daniel-vargas-lópez</span>
+        </a>
+        <a href="https://github.com/dvargasl2/" target="_blank" rel="noopener" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">@dvargasl2</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span>Designed & built by <span class="accent">Daniel Vargas López</span></span>
+      <span class="footer-year">© 2025</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
