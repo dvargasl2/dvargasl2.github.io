@@ -157,6 +157,9 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 24px;
   min-height: 1.6em;
 }
+.typed-wrapper {
+  white-space: nowrap;
+}
 .cursor {
   display: inline-block;
   color: var(--accent);
@@ -512,6 +515,19 @@ section:not(#hero) { padding: 112px 32px; }
   margin-bottom: 0;
 }
 
+/* ========== EXPERIENCE LOGOS ========== */
+.exp-org-logo {
+  height: 24px;
+  width: auto;
+  max-width: 80px;
+  object-fit: contain;
+  opacity: 0.45;
+  filter: brightness(0) invert(1);
+  transition: opacity 0.25s;
+  flex-shrink: 0;
+}
+.timeline-item:hover .exp-org-logo { opacity: 0.8; }
+
 /* ========== TIMELINE ========== */
 .timeline {
   position: relative;
@@ -547,6 +563,19 @@ section:not(#hero) { padding: 112px 32px; }
   border-radius: var(--radius);
   background: transparent;
   transition: border-color 0.25s, background 0.25s;
+  position: relative;
+}
+.timeline-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+.timeline-card-header h3 {
+  margin-bottom: 0;
+  font-size: 1.05rem;
+  font-weight: 500;
 }
 .timeline-item:hover .timeline-card {
   border-color: var(--border2);
@@ -601,11 +630,13 @@ section:not(#hero) { padding: 112px 32px; }
   align-items: flex-start;
 }
 .project-icon { color: var(--text-dim); width: 28px; height: 28px; }
+a.project-links,
 .project-links a {
   color: var(--text-dim);
   transition: color 0.2s;
   display: flex;
 }
+a.project-links:hover,
 .project-links a:hover { color: var(--text); }
 .project-links svg { width: 17px; height: 17px; }
 .project-card h3 { font-size: 1rem; font-weight: 500; }
@@ -617,6 +648,14 @@ section:not(#hero) { padding: 112px 32px; }
   font-weight: 300;
 }
 .project-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+
+/* Project header right-side group */
+.project-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
 
 /* Featured card */
 .project-card-featured {
@@ -692,7 +731,23 @@ section:not(#hero) { padding: 112px 32px; }
 }
 
 /* ========== CONTACT ========== */
-.contact-sub { text-align: center; margin-bottom: 56px; }
+.contact-sub { text-align: center; margin-bottom: 40px; }
+.contact-photo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.contact-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 15%;
+  border: 1px solid var(--border2);
+  filter: grayscale(0.1);
+  transition: border-color 0.3s;
+}
+.contact-photo:hover { border-color: var(--text-muted); }
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
