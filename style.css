@@ -583,18 +583,27 @@ section:not(#hero) { padding: 112px 32px; }
   max-width: 130px;
   object-fit: contain;
   flex-shrink: 0;
-  /* Dark mode: flatten everything to white silhouette */
-  filter: brightness(0) invert(1);
-  opacity: 0.55;
-  transition: opacity 0.3s;
+  border-radius: 6px;
+  padding: 5px 10px;
+  /* Natural colors on white pill — works for logos with dark/coloured content */
+  background: rgba(255,255,255,0.93);
+  opacity: 0.78;
+  transition: opacity 0.25s;
+}
+/* Logos with light/white content need a dark pill instead */
+.exp-org-logo.logo-on-dark {
+  background: rgba(18,18,18,0.92);
+  border: 1px solid rgba(255,255,255,0.10);
 }
 [data-theme="light"] .exp-org-logo {
-  /* Light mode: flatten to dark silhouette */
-  filter: brightness(0);
-  opacity: 0.40;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid var(--border);
 }
-.timeline-item:hover .exp-org-logo { opacity: 0.90; }
-[data-theme="light"] .timeline-item:hover .exp-org-logo { opacity: 0.70; }
+[data-theme="light"] .exp-org-logo.logo-on-dark {
+  background: rgba(30,30,30,0.88);
+  border: 1px solid rgba(0,0,0,0.15);
+}
+.timeline-item:hover .exp-org-logo { opacity: 1; }
 
 /* ========== TIMELINE ========== */
 .timeline {
