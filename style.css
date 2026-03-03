@@ -578,22 +578,27 @@ section:not(#hero) { padding: 112px 32px; }
 
 /* ========== EXPERIENCE / EDUCATION LOGOS ========== */
 .exp-org-logo {
-  height: 22px;
+  height: 38px;
   width: auto;
-  max-width: 86px;
+  max-width: 130px;
   object-fit: contain;
   flex-shrink: 0;
-  border-radius: 4px;
-  padding: 3px 7px;
-  background: rgba(255,255,255,0.90);
-  opacity: 0.65;
-  transition: opacity 0.25s;
+  border-radius: 6px;
+  padding: 5px 10px;
+  background: rgba(255,255,255,0.96);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.40);
+  opacity: 0.82;
+  transition: opacity 0.25s, box-shadow 0.25s;
 }
 [data-theme="light"] .exp-org-logo {
-  background: rgba(255,255,255,0.70);
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
   border: 1px solid var(--border);
 }
-.timeline-item:hover .exp-org-logo { opacity: 1; }
+.timeline-item:hover .exp-org-logo {
+  opacity: 1;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.50);
+}
 
 /* ========== TIMELINE ========== */
 .timeline {
