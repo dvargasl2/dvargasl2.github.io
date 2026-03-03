@@ -583,22 +583,18 @@ section:not(#hero) { padding: 112px 32px; }
   max-width: 130px;
   object-fit: contain;
   flex-shrink: 0;
-  border-radius: 6px;
-  padding: 5px 10px;
-  background: rgba(255,255,255,0.96);
-  box-shadow: 0 1px 6px rgba(0,0,0,0.40);
-  opacity: 0.82;
-  transition: opacity 0.25s, box-shadow 0.25s;
+  /* Dark mode: flatten everything to white silhouette */
+  filter: brightness(0) invert(1);
+  opacity: 0.55;
+  transition: opacity 0.3s;
 }
 [data-theme="light"] .exp-org-logo {
-  background: #ffffff;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
-  border: 1px solid var(--border);
+  /* Light mode: flatten to dark silhouette */
+  filter: brightness(0);
+  opacity: 0.40;
 }
-.timeline-item:hover .exp-org-logo {
-  opacity: 1;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.50);
-}
+.timeline-item:hover .exp-org-logo { opacity: 0.90; }
+[data-theme="light"] .timeline-item:hover .exp-org-logo { opacity: 0.70; }
 
 /* ========== TIMELINE ========== */
 .timeline {
