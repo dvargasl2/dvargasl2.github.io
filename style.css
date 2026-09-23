@@ -519,7 +519,7 @@ section:not(#hero) { padding: 112px 32px; }
 /* ========== SKILLS ========== */
 .skills-editorial {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 48px 32px;
   margin-top: 48px;
   padding-top: 48px;
@@ -707,6 +707,7 @@ section:not(#hero) { padding: 112px 32px; }
   align-items: flex-start;
 }
 .project-icon { color: var(--text-dim); width: 28px; height: 28px; }
+.project-icon-img { width: 30px; height: 30px; object-fit: contain; border-radius: 6px; }
 a.project-links,
 .project-links a {
   color: var(--text-dim);

@@ -25,8 +25,8 @@ navLinks.querySelectorAll('a').forEach(link => {
 const phrases = [
   'Data Analytics & ML Enthusiast',
   'CS + IE Student @ Uniandes',
+  'Building AI Agents with MCP',
   'Python Developer',
-  'AI & Data-Driven Thinker',
   'Trilingual · ES / EN / FR'
 ];
 let phraseIndex = 0;
