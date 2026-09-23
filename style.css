@@ -707,7 +707,7 @@ section:not(#hero) { padding: 112px 32px; }
   align-items: flex-start;
 }
 .project-icon { color: var(--text-dim); width: 28px; height: 28px; }
-.project-icon-img { width: 30px; height: 30px; object-fit: contain; border-radius: 6px; }
+.project-icon-img { width: 30px; height: 30px; max-width: 30px; max-height: 30px; flex-shrink: 0; object-fit: contain; border-radius: 6px; }
 a.project-links,
 .project-links a {
   color: var(--text-dim);
